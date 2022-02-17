@@ -1,9 +1,16 @@
 {
   "boards": [
     {
-      "name": "test",
+      "name": "board created by .request() Patch command",
       "user": 0,
       "id": 36722706109,
+      "starred": false,
+      "created": "2022-02-17"
+    },
+    {
+      "name": "board created by .request() command",
+      "user": 0,
+      "id": 40378838186,
       "starred": false,
       "created": "2022-02-17"
     }
