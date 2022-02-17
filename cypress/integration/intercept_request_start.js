@@ -1,12 +1,14 @@
 /// <reference types="cypress" />
 
 it('Intercept requests', () => {
+   cy.intercept('/api/boards').as('boardList');
 
-  cy
-    .visit('/')
+   cy
+      .visit('/')
 
-  cy
-    .get('[data-cy=board-item]')
-    .should('have.length', 0)
+   cy.wait('@boardList');
+   cy
+      .get('[data-cy=board-item]')
+      .should('have.length', 0)
 
 });
