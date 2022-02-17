@@ -2,14 +2,11 @@
 
 beforeEach(() => {
 
-  cy
-    .visit('/board/2305140181')
+   cy
+      .visit('/board/36722706109')
 })
 
 it('Chaining commands', () => {
 
-  cy
-    .get('[data-cy="task"]')
-    .should('be.visible')
-
+   cy.contains('milk')
 });

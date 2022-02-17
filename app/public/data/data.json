@@ -1,6 +1,42 @@
 {
-  "boards": [],
-  "tasks": [],
+  "boards": [
+    {
+      "name": "test",
+      "user": 0,
+      "id": 36722706109,
+      "starred": false,
+      "created": "2022-02-17"
+    }
+  ],
+  "tasks": [
+    {
+      "boardId": 36722706109,
+      "description": "",
+      "completed": false,
+      "listId": 57483413151,
+      "title": "2",
+      "id": 60682708783,
+      "created": "2022-02-17",
+      "deadline": "2022-02-20"
+    },
+    {
+      "boardId": 36722706109,
+      "description": "",
+      "completed": false,
+      "listId": 57483413151,
+      "title": "milk",
+      "id": 49199626055,
+      "created": "2022-02-17",
+      "deadline": "2022-02-20"
+    }
+  ],
   "users": [],
-  "lists": []
+  "lists": [
+    {
+      "boardId": 36722706109,
+      "title": "1",
+      "id": 57483413151,
+      "created": "2022-02-17"
+    }
+  ]
 }
