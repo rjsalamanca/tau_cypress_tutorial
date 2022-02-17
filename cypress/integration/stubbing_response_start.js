@@ -2,13 +2,20 @@
 
 it('Stubbing response', () => {
 
-  cy
-    .intercept({
-      method: 'GET',
-      url: '/api/boards'
-    }).as('boardList')
+   cy
+      .intercept({
+         method: 'POST',
+         url: '/api/boards'
+      }, {
+         forceNetworkError: true
+      }).as('createdBoard')
 
-  cy
-    .visit('/')
+   cy
+      .visit('/')
 
+   cy.get('[data-cy=create-board]').click();
+
+   cy.get('[data-cy=new-board-input]').type('new board{enter}')
+
+   cy.get('#errorMessage').should('be.visible');
 });
